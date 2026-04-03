@@ -47,7 +47,7 @@ void printReport(const vector<double>& data) {
 	cout << "---------------------\n";
 }
 
-void saveToDisk(const vector<double>& data) {
+void saveToDisk(vector<double>& data) {
 	ofstream file("history.txt");
 
 	for (double val : data) {
@@ -81,13 +81,20 @@ int main() {
 	double x;
 
 	while (true) {
-		cout << "\nEnter a number (999 to exit): ";
+		cout << "\nEnter a number (999 to exit; -999 to clear history): ";
 		cin >> x;
 
 		if (x == 999) {
 			printReport(history);
 			saveToDisk(history);
 			break;
+		}
+
+		if (x == -999) {
+			cout << "!!! WARNING: WIPING ALL HISTORY !!!\n";
+			history.clear();
+			cout << "History cleared. Ready for fresh data\n";
+			continue;
 		}
 
 		history.push_back(x);
