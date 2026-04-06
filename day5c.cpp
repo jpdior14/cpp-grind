@@ -20,8 +20,8 @@ int main() {
 	std::cout << "Car 1's data is: " << head->data << '\n';
 	std::cout << "Reading for Car 2 from Car 1's pointer... It is: " << head->next_node->data << '\n';
 
-	delete head;
 	delete second_car;
+	delete head;
 
 	std::cout << "Both cars destroyed. The heap is at peace. Amen!\n";
 
