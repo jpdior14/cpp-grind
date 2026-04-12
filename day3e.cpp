@@ -16,7 +16,7 @@ int main() {
 	int* dangling;
 	{
 		int temp {5};
-		danglind = &temp;
+		dangling = &temp;
 	}
 
 	return 0;
