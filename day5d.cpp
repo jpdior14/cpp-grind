@@ -9,6 +9,12 @@ void age_countdown(int start_age);
 
 void print_verdict(int apps, int interviews, int leetcode);
 
+void send_applications(std::string company_name, int num_apps) {
+	std::cout << "Targeting " << company_name << " with " << num_apps << " applications.\n";
+	int result = send_applications(num_apps, 5);
+	std::cout << "Got " << result << " interviews from " << company_name << ".\n";
+}
+
 int main() {
 	std::cout << "=== MAIMAI JOB APPLICATION SIMULATOR ===\n"
 		  << "Market: Java Backend, Fresh Grad, Chengdu\n\n";
@@ -16,6 +22,7 @@ int main() {
 	const int APPLICATIONS_NEEDED {100};
 	const int INTERVIEW_RATE {3};
 
+	send_applications("ByteDance", 20);
 	int interviews_gotten = send_applications(APPLICATIONS_NEEDED, INTERVIEW_RATE);
 	int leetcode_solved = grind_leetcode();
 
