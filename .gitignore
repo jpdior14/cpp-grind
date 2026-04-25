@@ -1,6 +1,9 @@
 # Compiled binaries
 *.exe
 *.o
+*
+!*.*
+!*/
 day4e
 day4f
 day4g
@@ -12,3 +15,8 @@ day4g
 # OS files
 .DS_Store
 Thumbs.db
+
+# Or specifically ignore common C++ output names
+a.out
+*.o
+*.exe
