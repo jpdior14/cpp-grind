@@ -44,6 +44,20 @@ public:
         std::cout << "push_back(" << value << "): Added to tail.\n";
     }
 
+	void reverse() {
+    		Node* prev = nullptr;
+		Node* current = head;
+    		Node* next = nullptr;
+    		while (current != nullptr) {
+        		next = current->next;
+        		current->next = prev;
+        		prev = current;
+        		current = next;
+    		}
+    		head = prev;
+    		std::cout << "List reversed.\n";
+	}
+
     bool remove(int value) {
         if (head == nullptr) return false;
 
