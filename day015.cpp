@@ -1,43 +1,31 @@
 #include <iostream>
-#include <unordered_map> // NEW WEAPON! The O(1) Lookup Table.
+#include <unordered_map>
 #include <string>
 
 int main() {
-    std::cout << "=== TENCENT GLOBAL DATACENTER (Instant Indexing) ===\n\n";
+	std::cout << "=== TENCENT GLOBAL DATACENTER (Instant Indexing) ===\n\n";
 
-    // 1. THE HASH MAP BLUEPRINT
-    // Look at our templates in action! 
-    // We are making a map where the "Key" is a string (username) 
-    // and the "Value" is an int (account points)
-    std::unordered_map<std::string, int> wechat_db;
+	std::unordered_map<std::string, int> wechat;
 
-    // 2. FILLING THE DB WITH THE INDEX PROTOCOL
-    // Boom! Direct assignment without arrays, pushing back, or sizing!
-    wechat_db["Tencent_CEO"] = 9999999;
-    wechat_db["Intern_Bao"] = -5;
-    wechat_db["Yaounde_Godzilla"] = 250000;
-    
-    // We can even check the size instantly!
-    std::cout << "Server Live: Database holds " << wechat_db.size() << " user profiles.\n\n";
+	wechat["Tencent_CEO"] = 9999999;
+	wechat["Intern_BAO"] = -5;
+	wechat["Godzilla"] = 250000;
 
-    // 3. THE $O(1)$ BYTEDANCE SEARCH REQUEST!
-    std::string search_target = "Yaounde_Godzilla";
+	std::cout << "Server Live: Database holds " << wechat.size() << " user profiles.\n";
 
-    std::cout << "--> Client requesting data for User: [" << search_target << "]\n";
-    std::cout << "--> Bypassing vectors... ignoring other 1 billion entries...\n";
+	std::string search_target = "Godzilla";
 
-    // Check if the user exists using `.find()`. It operates at blazing speed!
-    // 'wechat_db.end()' means "We reached the end of the void and didn't find them."
-    if (wechat_db.find(search_target) != wechat_db.end()) {
-        std::cout << "\n[QUERY MATCHED IN O(1) NANOSECONDS!]\n";
-        
-        // Retrieve the data DIRECTLY using the key name! 
-        std::cout << search_target << " Balance: ¥" << wechat_db[search_target] << " RMB\n";
-    } else {
-        std::cout << "\n[ERROR]: User does not exist in the database!\n";
-    }
+	std::cout << "--> Client requesting data for User: [" << search_target << "]\n"
+		  << "--> Bypassing vectors... ignoring other 1 billion entries...\n";
 
-    std::cout << "\nStatus: NO FOR-LOOPS USED. 100% MAXIMUM SERVER OPTIMIZATION!\n";
+	if (wechat.find(search_target) != wechat.end()) {
+		std::cout << "\n[QUERY MATCHED IN O(1) NANOSECONDS!]\n"
+			  << search_target << " Balance: ¥" << wechat[search_target] << " RMB\n";
+	} else {
+		std::cout << "\n[ERROR]: User does not exist in the database!\n";
+	}
 
-    return 0;
+	std::cout << "\nStatus: NO FOR-LOOPS USED. 100% MAXIMUM SERVER OPTIMIZATION!\n";
+
+	return 0;
 }
