@@ -23,12 +23,23 @@ int findHighest(int scores[], int size) {
 	return highest;
 }
 
+int findLowest(int scores[], int size) {
+	int lowest = scores[0];
+	for (int i {1}; i < size; i++) {
+		if (scores[i] < lowest) {
+			lowest = scores[i];
+		}
+	}
+	return lowest;
+}
+
 int main() {
 	int scores[5] {85, 92, 78, 90, 88};
 
 	std::cout << "Sum: " << calculateSum(scores, 5) << '\n'
 		  << "Average: " << calculateAverage(scores, 5) << '\n'
-		  << "Highest: " << findHighest(scores, 5) << '\n';
+		  << "Highest: " << findHighest(scores, 5) << '\n'
+		  << "Lowest: " << findLowest(scores, 5) << '\n';
 
 	return 0;
 }
