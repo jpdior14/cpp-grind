@@ -34,12 +34,12 @@ int findLowest(int scores[], int size) {
 }
 
 int main() {
-	int scores[5] {85, 92, 78, 90, 88};
+	int scores[7] {85, 92, 78, 90, 88, 86, 87};
 
-	std::cout << "Sum: " << calculateSum(scores, 5) << '\n'
-		  << "Average: " << calculateAverage(scores, 5) << '\n'
-		  << "Highest: " << findHighest(scores, 5) << '\n'
-		  << "Lowest: " << findLowest(scores, 5) << '\n';
+	std::cout << "Sum: " << calculateSum(scores, 7) << '\n'
+		  << "Average: " << calculateAverage(scores, 7) << '\n'
+		  << "Highest: " << findHighest(scores, 7) << '\n'
+		  << "Lowest: " << findLowest(scores, 7) << '\n';
 
 	return 0;
 }
