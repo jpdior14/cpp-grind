@@ -13,10 +13,10 @@ int main() {
 	int scores[7] {85, 92, 78, 90, 88, 73, 95};
 
 	int target {90};
-	int result {linearSearch(scores, 7, target);
+	int result {linearSearch(scores, 7, target)};
 
 	if (result != -1) {
-		std::cout << "Found " << target >> " at index " << result << '\n';
+		std::cout << "Found " << target << " at index " << result << '\n';
 	} else {
 		std::cout << target << " not found." << '\n';
 	}
