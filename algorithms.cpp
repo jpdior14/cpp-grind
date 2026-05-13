@@ -55,7 +55,7 @@ int main() {
 	printArray(scores, 7);
 
 	std::cout << "\nAnd to prove linear search still works, let's run it again!\n";
-	linearSearch(scores, 7, target);
+	result = linearSearch(scores, 7, target);
 	std::cout << "Found " << target << " at index " << result << '\n';
 
 	return 0;
