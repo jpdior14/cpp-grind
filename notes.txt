@@ -1,0 +1,24 @@
+DAY 0 - Oct 12, 2025
+Learned: WSL2 setup, git push, basic C++ compile/run
+Struggled: Everything was new
+Target: Arrays and loops
+
+DAY 1 - Oct 13, 2025  
+Learned: Arrays, for-loops, integer division lies
+Struggled: Predicting loop behavior mentally
+Target: Functions
+
+DAY 2 - Oct 14, 2025
+Learned: Functions, pass-by-reference, modular code
+Struggled: Understanding why & makes swap work
+Target: Algorithms
+
+DAY 3 - Oct 15, 2025
+Learned: Linear search, bubble sort, early return, sorted vs unsorted indices
+Struggled: Nothing major — bubble sort trace on paper helped
+Target: Pointers
+
+DAY 4 - Oct 16, 2025
+Learned: Memory addresses, pointer arithmetic, arrays ARE pointers, 2[scores] is legal
+Struggled: Understanding the difference between references and pointers
+Target: Pointers AND Memory
