@@ -48,7 +48,11 @@ int main() {
 	std::cin >> target;
 
 	int result = {linearSearch(scores, 7, target)};
-	std::cout << "Found " << target << " at index " << result << '\n';
+	if (result != -1) {
+		std::cout << "Found " << target << " at index " << result << '\n';
+	} else {
+		std::cout << target << " not found.\n";
+	}
 
 	std::cout << "After: ";
 	bubbleSort(scores, 7);
@@ -56,7 +60,11 @@ int main() {
 
 	std::cout << "\nAnd to prove linear search still works, let's run it again!\n";
 	result = linearSearch(scores, 7, target);
-	std::cout << "Found " << target << " at index " << result << '\n';
+	if (result != -1) {
+		std::cout << "Found " << target << " at index " << result << '\n';
+	} else {
+		std::cout << target << " not found.\n";
+	}
 
 	return 0;
 }
