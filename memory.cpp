@@ -26,7 +26,17 @@ int main() {
 
 		  << "scores[2]	" << scores[2] << '\n'
 		  << "*(scores + 2)	" << scores[2] << '\n'
-		  << "2[scores]	" << 2[scores] << '\n';
+		  << "2[scores]	" << 2[scores] << '\n'
+
+		  << "\n=== POINTER WALK ===\n";
+
+	int* ptr {scores};
+
+	for (int i {0}; i < 5; i++) {
+		std::cout << "ptr is at: " << ptr
+			  << " | Value: " << *ptr << '\n';
+		ptr = ptr + 1;
+	}
 
 	return 0;
 }
