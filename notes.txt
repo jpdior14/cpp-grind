@@ -31,3 +31,9 @@ Struggled: Menu system was too many new ideas at once.
 Teacher skipped the notepad lesson and hid it inside 6 functions.
 My anger is valid.
 Status: Concept understood. No code written.
+
+DAY 6 - Oct 18, 2025
+Learned: Function can fill array AND update notepad via reference (&).
+main() trusts the notepad to know how many rooms to print.
+Struggled: nothing
+Target: maybe user input into the notepad system?
