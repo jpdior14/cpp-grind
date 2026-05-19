@@ -37,3 +37,9 @@ Learned: Function can fill array AND update notepad via reference (&).
 main() trusts the notepad to know how many rooms to print.
 Struggled: nothing
 Target: maybe user input into the notepad system?
+
+DAY 7 - Oct 19, 2025
+Learned: User input inside a function drives the notepad value.
+Temporary variable (num) holds input before committing to official notepad.
+Struggled: Why do we need the temporary num at all?
+Target: maybe combine with search? or sort?
