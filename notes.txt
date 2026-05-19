@@ -22,3 +22,12 @@ DAY 4 - Oct 16, 2025
 Learned: Memory addresses, pointer arithmetic, arrays ARE pointers, 2[scores] is legal
 Struggled: Understanding the difference between references and pointers
 Target: Pointers AND Memory
+
+DAY 5 - Oct 17, 2025
+Concept learned: Partially-filled arrays need a "notepad" (count variable) 
+to track how many rooms are actually occupied vs. total capacity.
+&count passes the real notepad so functions can update it.
+Struggled: Menu system was too many new ideas at once. 
+Teacher skipped the notepad lesson and hid it inside 6 functions.
+My anger is valid.
+Status: Concept understood. No code written.
