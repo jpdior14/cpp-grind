@@ -43,3 +43,10 @@ Learned: User input inside a function drives the notepad value.
 Temporary variable (num) holds input before committing to official notepad.
 Struggled: Why do we need the temporary num at all?
 Target: maybe combine with search? or sort?
+
+DAY 8 - Oct 20, 2025
+Learned: Wiring two functions together. 
+checkIn modifies notepad -> needs &
+searchScore only reads notepad -> no &
+Struggled: Why does searchScore use int notepad but checkIn uses int &notepad?
+Target: maybe sort the user-inputted array?
