@@ -50,3 +50,10 @@ checkIn modifies notepad -> needs &
 searchScore only reads notepad -> no &
 Struggled: Why does searchScore use int notepad but checkIn uses int &notepad?
 Target: maybe sort the user-inputted array?
+
+DAY 9 - Oct 21, 2025
+Learned: bubbleSort wired into the pipeline. 
+Modifies array but not notepad -> no & needed.
+displayScores reusable: called twice (before and after sort).
+Struggled: Why does bubbleSort take int notepad (no &) even though it changes the array?
+Target: maybe stats? Or maybe a tiny menu?
