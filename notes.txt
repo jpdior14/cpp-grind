@@ -57,3 +57,10 @@ Modifies array but not notepad -> no & needed.
 displayScores reusable: called twice (before and after sort).
 Struggled: Why does bubbleSort take int notepad (no &) even though it changes the array?
 Target: maybe stats? Or maybe a tiny menu?
+
+DAY 10 - Oct 22, 2025
+Learned: Full pipeline: input -> display -> sort -> display -> stats.
+showStats reads notepad to know loop limit.
+Initialize highest/lowest to rooms[0] to handle negative numbers correctly.
+Struggled: Why does showStats start highest {rooms[0]} and lowest {rooms[0]} instead of 0?
+Target: maybe a real menu with options?
